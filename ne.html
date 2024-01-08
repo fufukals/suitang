@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中国女性传统服饰</title>
+		<style type="text/css">
+			body{
+				margin:0 auto;
+				background-image:url("beijing.jpg");
+				background-repeat:no-repeat;
+				background-size:100% 100%;
+				background-attachment: fixed;
+			}
+			#title{
+				padding-left: 60px;
+				font-size: 60px;
+				font-family: "楷体";
+			}
+			.blank{
+				height:35px;
+			}
+			#clothPic{
+				height:500px;
+				display: flex;
+				justify-content: center;
+				opacity: 0.9;
+				flex:1;
+				justify-content: space-around;
+				align-items: center;
+			}
+			
+			#clothPic1{
+				width:300px;
+				padding-left: 40px;
+			} 
+			#clothPic1:hover {  
+			  transform: scale(1.5); 
+			   cursor: pointer;  
+			}
+			.showCont{
+				padding:20px;
+				border:5px solid orangered;
+				border-radius: 10px;
+				width:660px;
+				height:500px;
+				overflow: auto;
+				font-size:25px;
+				font-family: "楷体";
+				background-color: whitesmoke;
+			}
+			.hidCont{
+				display: none;
+			}
+			.arrow{
+				width:55px;
+				font-size: 40px;
+				font-weight:bolder;
+				color:orangered;
+			}
+			.arrow:hover{
+				font-size: 55px;
+				font-weight:bolder;
+				color:orangered;
+				transition:all 0.3s ease;
+			}
+			.big-button {  
+			  		 font-size: 35px;  
+			  		 padding: 30px 40px; 
+			  		  border: none;  
+			  	 color: black;  
+			  			  cursor: pointer;  
+			  		   border-radius: 5px; 
+			  	font-family: "楷体";
+			  transition: font-size 0.3s ease; 
+			}  
+			  
+			.big-button:hover {  
+			  font-size: 40px; 
+			  animation: blink 1.5s infinite; 
+			}  
+			  
+			@keyframes blink {  
+			  0%, 100% { opacity: 1; }  
+			  50% { opacity: 0; }  
+			}
+			</style> 
+			<script type="text/javascript">
+				document.getElementById("con2").style.display="none";
+				function changeCont(){
+					if(document.getElementById("con1").className=="showCont")
+					{
+						document.getElementById("con2").className="showCont";
+						document.getElementById("con1").className="hidCont";
+					}
+					else if(document.getElementById("con2").className=="showCont")
+					{
+						document.getElementById("con1").className="showCont";
+						document.getElementById("con2").className="hidCont";
+					}
+				}
+			</script>
+	</head>
+	
+	<body>
+    	<div class="blank"></div>
+    	<div id="title">隋唐</div>
+			<div id="clothPic">
+					<img id="clothPic1" src="suitang.png" />
+					<div class="arrow" onclick="changeCont()">《</div>
+					<div class="showCont" id="con1"><h3>隋唐时期女子衣服的形制</h3>隋唐时期女子衣服的形制主要有襦裙、袍、衫、帔等.
+襦裙是一种上下分割的汉服，上衣为紧身襦，下摆为宽松的裙子，通常以腰带系扎。襦裙的色彩较为丰富，其中以红、黄、绿等颜色最为常见。
+袍是上下缝合的服装，通常穿于襦裙外，里面需要中衣、裤、裙为衬。
+
+衫是一种单层或夹层的上衣，有长袖或短袖，通常为直领或交领。
+
+帔是一种类似披肩或围巾的服装，多为长条形，两端有装饰。
+
+此外，隋唐时期女子衣服还有半臂、诃子裙、袒胸衣等形制。
+半臂类似于现在的短袖衬衫，诃子裙是一种腰部有系带的裙子，袒胸衣则是一种领口较低的上衣。
+
+文献中出现石榴裙、柳花裙、藕丝裙、珍珠裙、翡翠裙、郁金裙、花笼裙、百鸟裙等。有的是指质地、颜色、款式，有的是指工艺。在众多的裙服中，石榴裙最为有名
+					</div>
+	   <div class="hidCont" id="con2"></br>据传，杨贵妃非常喜欢牡丹花，她的衣裳上也绣满了牡丹花纹。每次杨贵妃穿着绣满牡丹花纹的衣物出场，都会让全场的焦点都集中在她身上。因此，牡丹花也成为了隋唐时期流行的花纹之一。
+
+杨贵妃身出“红开”井染红指汗的“巾帕”，是她浓抹厨脂与红粉的染色所致。除了脸上之外的装饰涂抹，杨贵妃还喜爱胸佩“香囊”。据说当是西域进奉的香料，香气十分浓厚持久，把这个香料放进精美的布囊之中，于是便有了“香囊”的产生。
+
+杨贵妃喜欢穿着轻盈的薄纱衣，这种衣服质轻如纱，非常适合她跳舞时的身姿，也让她看起来更加飘逸、优美；她穿着的罗裙通常都是用锦绣织成的，色彩鲜艳、图案精美；她有一件紫色的薄绢衣服，非常华丽。这种紫色的薄绢衣服在当时非常流行；她头上佩戴的金步摇非常华丽，金雀、玉搔头等饰物也十分精致。
+
+</div>
+					<div class="arrow" onclick="changeCont()">》</div>
+					
+			</div>
+			<script>
+			var backButton = document.createElement("button");
+			backButton.textContent = "返回";    
+			backButton.onclick = function() {    
+			window.history.back();    
+			};    
+			backButton.classList.add("big-button");  
+			document.body.appendChild(backButton);
+			
+			var myImage = document.getElementById("myImage");  
+			myImage.onmouseleave = function() {  
+			  myImage.style.transform = "scale(1)";  
+			}
+			</script>
+	</body>
+</html>
